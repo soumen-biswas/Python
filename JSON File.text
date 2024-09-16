@@ -1,0 +1,47 @@
+Create DicData ======> JSONData----->
+
+import json
+
+DicData={
+    "name":"Soumen Biswas",
+    "age":23,
+    "city":"Khulna",
+    "title":["Student"]
+}
+JSONData = json.dumps(DicData,indent=4)
+
+print(JSONData)
+
+
+Create DicData ======> JSONData ======> JSON File ----->
+   ## Write______=>
+import json
+
+DicData={
+    "name":"Soumen Biswas",
+    "age":23,
+    "city":"Khulna",
+    "title":["Student"]
+}
+
+with open('new.json', 'w') as file:
+    json.dump(DicData, file,indent=4)
+    print("completed")
+
+  ##Read_______=>
+
+import json
+
+with open('new.json', 'r') as file:
+    DicData = json.load(file)
+    print(DicData)
+
+*******
+
+try:
+    with open('now.json', 'r') as file:
+         DicData = json.load(file)
+         print(DicData)
+
+except Exception as error:
+    print(error)

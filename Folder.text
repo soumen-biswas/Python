@@ -1,0 +1,21 @@
+Folder create----->
+import os
+os.mkdir("new folders")
+
+Folder rename----->
+import os
+os.rename("new Folders","new Folders1")
+
+Folder remove----->
+import os
+os.rmdir("new folders1")
+
+Folder write----->
+with open("Folder location/demo.text","w") as file:
+    file.write("Hello World")
+    print("Success")
+
+Folder read----->
+with open("Folder location/demo.text","r") as file:
+    content = file.read()
+    print(content)

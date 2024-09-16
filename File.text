@@ -1,0 +1,21 @@
+File create----->
+with open("demo.tex","w") as file:
+    print("Success")
+
+File write----->
+with open("demo.text","w") as file:
+    file.write("Hello World")
+    print("Success")
+
+File read----->
+with open("demo.tex","r") as file:
+    content = file.read()
+    print(content)
+
+File rename----->
+import os
+os.rename("new.tex","my.tex")
+
+File remove----->
+import os
+os.remove("my.tex")
